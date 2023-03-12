@@ -1,11 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>CV</title>
+        <title>Accordion</title>
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
-        <label class="testLabel">Test</label>
-        <div class="test">Test</div>
+        <div class="mainContainer">
+            <h1>Accordion</h1>
+            <label class="container" for="holdImage">
+                <input type="radio" class="check" id="holdImage" name="radio">
+                <label class="testLabel" for="holdImage">Who would win?</label>
+                <i class="fa fa-plus-circle"></i>
+                <i class="fa fa-minus-circle"></i>
+                <br>
+                <div class="img">
+                    <img class="img" src="img/1.jpg" width="40%">
+                </div>
+            </label>
+            
+            <label class="container" for="holdImage1">
+                <input type="radio" class="check" id="holdImage1" name="radio">
+                <label class="testLabel" for="holdImage1">Depression</label>
+                <i class="fa fa-plus-circle"></i>
+                <i class="fa fa-minus-circle"></i>
+                <br>
+                <div class="img">
+                    <img class="img" src="img/2.jpg" width="40%">
+                </div>
+            </label>
+
+            <label class="container" for="holdImage2">
+                <input type="radio" class="check" id="holdImage2" name="radio">
+                <label class="testLabel" for="holdImage2">Designers vs Programmers</label>
+                <i class="fa fa-plus-circle"></i>
+                <i class="fa fa-minus-circle"></i>
+                <br>
+                <div class="img">
+                    <img class="img" src="img/3.png" width="40%">
+                </div>
+            </label>
+
+            <label class="container" for="holdImage3">
+                <input type="radio" class="check" id="holdImage3" name="radio">
+                <label class="testLabel" for="holdImage3">Weekend</label>
+                <i class="fa fa-plus-circle"></i>
+                <i class="fa fa-minus-circle"></i>
+                <br>
+                <div class="img">
+                    <img class="img" src="img/4.jpg" width="40%">
+                </div>
+            </label>  
+
+            <label class="container" for="holdImage4">
+                <input type="radio" class="check" id="holdImage4" name="radio">
+                <label class="testLabel" for="holdImage4">Don't touch if it is working.</label>
+                <i class="fa fa-plus-circle"></i>
+                <i class="fa fa-minus-circle"></i>
+                <br>
+                <div class="img">
+                    <img class="img" src="img/5.jpg" width="40%">
+                </div>
+            </label>
+
+            <div id="my-div">
+                <a href="#" class="fill-div"></a>
+            </div>
+        </div>
     </body>
 </html>
