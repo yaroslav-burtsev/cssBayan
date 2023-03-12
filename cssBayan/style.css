@@ -1,26 +1,27 @@
 .testLabel {
     display: inline-block;
     font-family: "Lucida Console", "Courier New", monospace;
-    width: 500px;
-    height: 20px;
-    border: 1px black solid;
-    margin-bottom: 20px;
-    color: #afafaf;
+    width: 90%;
+    height: 40%;
+    border: 0.1rem rgb(0, 0, 0) solid;
+    margin-bottom: 5%;
+    color: #008cff;
     background-color: rgb(73, 73, 73);
 }
+
 .container {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 20px;
+    margin-bottom: 5%;
 }
 
 .container:hover > .img {
-    width: 500px;
+    width: 100%;
 }
 
 .testLabel ~ .img {
-    width: 0.1px;
+    width: 0.1%;
 }
 
 .check {
@@ -28,7 +29,7 @@
 }
 
 .check:checked ~ .img {
-    width: 500px;
+    width: 100%;
 }
 
 .container:hover > i.fa.fa-plus-circle {
@@ -60,13 +61,21 @@
 }
 
 .check:checked ~ .testLabel {
-    color: rgb(162, 162, 162);
+    color: aliceblue;
     background-color: rgb(104, 104, 104);
-    border: 1px rgb(162, 162, 162) solid;
+    border: 0.1rem rgb(162, 162, 162) solid;
 }
 
 .check:checked ~ i {
     color: rgb(162, 162, 162);
+}
+
+.container:hover {
+   cursor: all-scroll;
+}
+
+.testLabel:hover {
+    cursor: all-scroll;
 }
 
 .img {
@@ -88,6 +97,10 @@ i {
 
 .mainContainer:hover i {
     display: inline;
+}
+
+.mainContainer:hover .testLabel {
+    color: aliceblue;
 }
 
 .mainContainer {
