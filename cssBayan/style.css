@@ -1,7 +1,103 @@
-.testLabel:hover + .test {
+.testLabel {
+    display: inline-block;
+    font-family: "Lucida Console", "Courier New", monospace;
+    width: 500px;
+    height: 20px;
+    border: 1px black solid;
+    margin-bottom: 20px;
+    color: #afafaf;
+    background-color: rgb(73, 73, 73);
+}
+.container {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+.container:hover > .img {
+    width: 500px;
+}
+
+.testLabel ~ .img {
+    width: 0.1px;
+}
+
+.check {
+    display: none;
+}
+
+.check:checked ~ .img {
+    width: 500px;
+}
+
+.container:hover > i.fa.fa-plus-circle {
+    display: none;
+}
+
+.container:hover > i.fa.fa-minus-circle {
+    display: inline;
+}
+
+.check:checked > i.fa.fa-plus-circle {
+    display: none;
+}
+
+.check:checked > i.fa.fa-minus-circle {
+    display: inline;
+}
+
+.container > i.fa.fa-minus-circle {
+    display: none;
+}
+
+.container > i {
+    display: none;
+}
+
+.container:hover ~ i {
     display: block;
 }
 
-.test {
-    display: none;
+.check:checked ~ .testLabel {
+    color: rgb(162, 162, 162);
+    background-color: rgb(104, 104, 104);
+    border: 1px rgb(162, 162, 162) solid;
+}
+
+.check:checked ~ i {
+    color: rgb(162, 162, 162);
+}
+
+.img {
+    display: block;
+    justify-content: center;
+    margin: auto;
+    transition: width 1s;
+}
+
+body {
+    background-color: rgb(36, 36, 36);
+    text-align: center;
+}
+
+i {
+    text-align: right;
+    color: rgb(73, 73, 73);
+}
+
+.mainContainer:hover i {
+    display: inline;
+}
+
+.mainContainer {
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+h1 {
+    font-family: "Lucida Console", "Courier New", monospace;
+    color: rgb(205, 205, 205);
 }
